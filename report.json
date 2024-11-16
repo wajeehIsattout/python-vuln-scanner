@@ -1,0 +1,850 @@
+[
+    {
+        "timestamp": "2024-11-16T00:31:46.580736",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=home.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "N/A",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:46.830387",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=home.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:46.939319",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=login.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "<form action=\"index.php?page=login.php\" enctype=\"application/x-www-form-urlencoded\" id=\"idLoginForm\" method=\"post\" onsubmit=\"return onSubmitOfLoginForm(this);\">\n<table style=\"margin-left:auto; margin-right:auto;\">\n<tr id=\"id-bad-cred-tr\" style=\"display: none;\">\n<td class=\"error-message\" colspan=\"2\">\r\n\t\t\t\t\tAuthentication Error: Bad user name or password\r\n\t\t\t\t</td>\n</tr>\n<tr><td></td></tr>\n<tr>\n<td class=\"form-header\" colspan=\"2\">Please sign-in</td>\n</tr>\n<tr><td></td></tr>\n<tr>\n<td class=\"label\">Name</td>\n<td><input maxlength=\"20\" name=\"username\" size=\"20\" type=\"text\"/></td>\n</tr>\n<tr>\n<td class=\"label\">Password</td>\n<td><input maxlength=\"20\" name=\"password\" size=\"20\" type=\"password\"/></td>\n</tr>\n<tr><td></td></tr>\n<tr>\n<td colspan=\"2\" style=\"text-align:center;\">\n<input class=\"button\" name=\"login-php-submit-button\" type=\"submit\" value=\"Login\">\n</input></td>\n</tr>\n<tr><td></td></tr>\n<tr>\n<td colspan=\"2\" style=\"text-align:center; font-style: italic;\">\r\n\t\t\t\t\tDont have an account? <a href=\"?page=register.php\">Please register here</a>\n</td>\n</tr>\n</table>\n</form>",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:47.205244",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=login.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:47.251174",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=login.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "N/A",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:47.519496",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=login.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:47.684910",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/index.php?do=toggle-hints&page=home.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "N/A",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:47.951258",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?do=toggle-hints&page=home.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:48.107433",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/index.php?do=toggle-security&page=home.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "N/A",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:48.362990",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?do=toggle-security&page=home.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:48.572690",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=show-log.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "N/A",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:48.824516",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=show-log.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:48.937474",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=captured-data.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "N/A",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:49.188576",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=captured-data.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:51.146004",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=credits.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "N/A",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:51.416726",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=credits.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:51.539532",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=user-info.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "<form action=\"./index.php?page=user-info.php\" enctype=\"application/x-www-form-urlencoded\" method=\"GET\">\n<input name=\"page\" type=\"hidden\" value=\"user-info.php\"/>\n<table style=\"margin-left:auto; margin-right:auto;\">\n<tr id=\"id-bad-cred-tr\" style=\"display: none;\">\n<td class=\"error-message\" colspan=\"2\">\r\n\t\t\t\tAuthentication Error: Bad user name or password\r\n\t\t\t</td>\n</tr>\n<tr><td></td></tr>\n<tr>\n<td class=\"form-header\" colspan=\"2\">Please enter username and password<br/> to view account details</td>\n</tr>\n<tr><td></td></tr>\n<tr>\n<td class=\"label\">Name</td>\n<td><input name=\"username\" size=\"20\" type=\"text\"/></td>\n</tr>\n<tr>\n<td class=\"label\">Password</td>\n<td><input name=\"password\" size=\"20\" type=\"password\"/></td>\n</tr>\n<tr><td></td></tr>\n<tr>\n<td colspan=\"2\" style=\"text-align:center;\">\n<input class=\"button\" name=\"user-info-php-submit-button\" type=\"submit\" value=\"View Account Details\">\n</input></td>\n</tr>\n<tr><td></td></tr>\n<tr>\n<td colspan=\"2\" style=\"text-align:center; font-style: italic;\">\r\n\t\t\t\tDont have an account? <a href=\"?page=register.php\">Please register here</a>\n</td>\n</tr>\n</table>\n</form>",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:51.798052",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=user-info.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:51.847938",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=user-info.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "N/A",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:52.100671",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=user-info.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:52.210390",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=register.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "<form action=\"index.php?page=register.php\" enctype=\"application/x-www-form-urlencoded\" method=\"post\">\n<table style=\"margin-left:auto; margin-right:auto;\">\n<tr id=\"id-bad-cred-tr\" style=\"display: none;\">\n<td class=\"error-message\" colspan=\"2\">\r\n\t\t\t\t\tAuthentication Error: Bad user name or password\r\n\t\t\t\t</td>\n</tr>\n<tr><td></td></tr>\n<tr>\n<td class=\"form-header\" colspan=\"2\">Please choose your username, password and signature</td>\n</tr>\n<tr><td></td></tr>\n<tr>\n<td class=\"label\">Username</td>\n<td><input name=\"username\" size=\"20\" type=\"text\"/></td>\n</tr>\n<tr>\n<td class=\"label\">Password</td>\n<td><input name=\"password\" size=\"20\" type=\"password\"/></td>\n</tr>\n<tr>\n<td class=\"label\">Confirm Password</td>\n<td><input name=\"confirm_password\" size=\"20\" type=\"password\"/></td>\n</tr>\n<tr>\n<td class=\"label\">Signature</td>\n<td><textarea cols=\"50\" name=\"my_signature\" rows=\"10\"></textarea></td>\n</tr>\n<tr><td></td></tr>\n<tr>\n<td colspan=\"2\" style=\"text-align:center;\">\n<input class=\"button\" name=\"register-php-submit-button\" type=\"submit\" value=\"Create Account\">\n</input></td>\n</tr>\n<tr><td></td></tr>\n</table>\n</form>",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:52.468923",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=register.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:52.520520",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=register.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "N/A",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:52.771119",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=register.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:53.242482",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=view-someones-blog.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:53.292531",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=view-someones-blog.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "N/A",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:53.544197",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=view-someones-blog.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:54.043939",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/?page=add-to-your-blog.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:54.092892",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/?page=add-to-your-blog.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "N/A",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:54.343546",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/?page=add-to-your-blog.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:54.454818",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=site-footer-xss-discussion.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "N/A",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:54.700535",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=site-footer-xss-discussion.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:55.172552",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=html5-storage.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:55.222591",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=html5-storage.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "N/A",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:55.473999",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=html5-storage.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:55.621243",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=capture-data.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "N/A",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:55.865941",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=capture-data.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:55.996410",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=dns-lookup.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "<form action=\"index.php?page=dns-lookup.php\" enctype=\"application/x-www-form-urlencoded\" id=\"idDNSLookupForm\" method=\"post\" onsubmit=\"return onSubmitBlogEntry(this);\">\n<table style=\"margin-left:auto; margin-right:auto;\">\n<tr id=\"id-bad-cred-tr\" style=\"display: none;\">\n<td class=\"error-message\" colspan=\"2\">\r\n\t\t\t\tError: Invalid Input\r\n\t\t\t</td>\n</tr>\n<tr><td></td></tr>\n<tr>\n<td class=\"form-header\" colspan=\"2\">Who would you like to do a DNS lookup on?<br/><br/>Enter IP or hostname</td>\n</tr>\n<tr><td></td></tr>\n<tr>\n<td class=\"label\">Hostname/IP</td>\n<td><input id=\"idTargetHostInput\" name=\"target_host\" size=\"20\" type=\"text\"/></td>\n</tr>\n<tr><td></td></tr>\n<tr>\n<td colspan=\"2\" style=\"text-align:center;\">\n<input class=\"button\" name=\"dns-lookup-php-submit-button\" type=\"submit\" value=\"Lookup DNS\">\n</input></td>\n</tr>\n<tr><td></td></tr>\n<tr><td></td></tr>\n</table>\n</form>",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:56.236985",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=dns-lookup.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:56.288742",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=dns-lookup.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "N/A",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:56.534481",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=dns-lookup.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:57.046180",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=password-generator.php&username=anonymous",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:57.106076",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=password-generator.php&username=anonymous",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "N/A",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:57.368681",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=password-generator.php&username=anonymous",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:57.850546",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=user-poll.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:57.900064",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=user-poll.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "N/A",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:58.140780",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=user-poll.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:58.252299",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=set-background-color.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "<form action=\"index.php?page=set-background-color.php\" enctype=\"application/x-www-form-urlencoded\" method=\"post\" style=\"background-color:#eecccc\">\n<table style=\"margin-left:auto; margin-right:auto;\">\n<tr id=\"id-bad-cred-tr\" style=\"display: none;\">\n<td class=\"error-message\" colspan=\"2\">\r\n\t\t\t\tError: Invalid Input\r\n\t\t\t</td>\n</tr>\n<tr><td></td></tr>\n<tr>\n<td class=\"form-header\" colspan=\"2\">Please enter the background color you would like to see<br/><br/>Enter the color in RRGGBB format<br/>(Example: Red = FF0000)</td>\n</tr>\n<tr><td></td></tr>\n<tr>\n<td class=\"label\">Background Color</td>\n<td>\n<input name=\"background_color\" size=\"6\" type=\"text\"/>\n</td>\n</tr>\n<tr><td></td></tr>\n<tr>\n<td colspan=\"2\" style=\"text-align:center;\">\n<input class=\"button\" name=\"set-background-color-php-submit-button\" type=\"submit\" value=\"Set Background Color\">\n</input></td>\n</tr>\n<tr><td></td></tr>\n<tr>\n<td class=\"informative-message\" colspan=\"2\" style=\"text-align: center;\">\r\n\t\t\t\tThe current background color is eecccc\t\t\t</td>\n</tr>\n<tr><td></td></tr>\n<tr><td></td></tr>\n</table>\n</form>",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:58.508189",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=set-background-color.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:58.555165",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=set-background-color.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "N/A",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:58.802150",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=set-background-color.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:59.265496",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=pen-test-tool-lookup.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:59.313908",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=pen-test-tool-lookup.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "N/A",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:31:59.558320",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=pen-test-tool-lookup.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:00.041492",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=text-file-viewer.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:00.099216",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=text-file-viewer.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "N/A",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:00.342391",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=text-file-viewer.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:00.805510",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/?page=view-someones-blog.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:00.854685",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/?page=view-someones-blog.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "N/A",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:01.118733",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/?page=view-someones-blog.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:01.225369",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/?page=show-log.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "N/A",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:01.483893",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/?page=show-log.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:01.947896",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/?page=text-file-viewer.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:01.996378",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/?page=text-file-viewer.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "N/A",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:02.248953",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/?page=text-file-viewer.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:02.358939",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/?page=user-info.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "<form action=\"./index.php?page=user-info.php\" enctype=\"application/x-www-form-urlencoded\" method=\"GET\">\n<input name=\"page\" type=\"hidden\" value=\"user-info.php\"/>\n<table style=\"margin-left:auto; margin-right:auto;\">\n<tr id=\"id-bad-cred-tr\" style=\"display: none;\">\n<td class=\"error-message\" colspan=\"2\">\r\n\t\t\t\tAuthentication Error: Bad user name or password\r\n\t\t\t</td>\n</tr>\n<tr><td></td></tr>\n<tr>\n<td class=\"form-header\" colspan=\"2\">Please enter username and password<br/> to view account details</td>\n</tr>\n<tr><td></td></tr>\n<tr>\n<td class=\"label\">Name</td>\n<td><input name=\"username\" size=\"20\" type=\"text\"/></td>\n</tr>\n<tr>\n<td class=\"label\">Password</td>\n<td><input name=\"password\" size=\"20\" type=\"password\"/></td>\n</tr>\n<tr><td></td></tr>\n<tr>\n<td colspan=\"2\" style=\"text-align:center;\">\n<input class=\"button\" name=\"user-info-php-submit-button\" type=\"submit\" value=\"View Account Details\">\n</input></td>\n</tr>\n<tr><td></td></tr>\n<tr>\n<td colspan=\"2\" style=\"text-align:center; font-style: italic;\">\r\n\t\t\t\tDont have an account? <a href=\"?page=register.php\">Please register here</a>\n</td>\n</tr>\n</table>\n</form>",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:02.617425",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/?page=user-info.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:02.663330",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/?page=user-info.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "N/A",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:02.915029",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/?page=user-info.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:04.521664",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=browser-info.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "N/A",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:04.829126",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=browser-info.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:04.940234",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/?page=login.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "<form action=\"index.php?page=login.php\" enctype=\"application/x-www-form-urlencoded\" id=\"idLoginForm\" method=\"post\" onsubmit=\"return onSubmitOfLoginForm(this);\">\n<table style=\"margin-left:auto; margin-right:auto;\">\n<tr id=\"id-bad-cred-tr\" style=\"display: none;\">\n<td class=\"error-message\" colspan=\"2\">\r\n\t\t\t\t\tAuthentication Error: Bad user name or password\r\n\t\t\t\t</td>\n</tr>\n<tr><td></td></tr>\n<tr>\n<td class=\"form-header\" colspan=\"2\">Please sign-in</td>\n</tr>\n<tr><td></td></tr>\n<tr>\n<td class=\"label\">Name</td>\n<td><input maxlength=\"20\" name=\"username\" size=\"20\" type=\"text\"/></td>\n</tr>\n<tr>\n<td class=\"label\">Password</td>\n<td><input maxlength=\"20\" name=\"password\" size=\"20\" type=\"password\"/></td>\n</tr>\n<tr><td></td></tr>\n<tr>\n<td colspan=\"2\" style=\"text-align:center;\">\n<input class=\"button\" name=\"login-php-submit-button\" type=\"submit\" value=\"Login\">\n</input></td>\n</tr>\n<tr><td></td></tr>\n<tr>\n<td colspan=\"2\" style=\"text-align:center; font-style: italic;\">\r\n\t\t\t\t\tDont have an account? <a href=\"?page=register.php\">Please register here</a>\n</td>\n</tr>\n</table>\n</form>",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:05.200955",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/?page=login.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:05.252062",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/?page=login.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "N/A",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:05.493538",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/?page=login.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:05.968674",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=source-viewer.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:06.021364",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=source-viewer.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "N/A",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:06.272243",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=source-viewer.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:06.372336",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=arbitrary-file-inclusion.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "N/A",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:06.622783",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=arbitrary-file-inclusion.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:07.099290",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=add-to-your-blog.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:07.146905",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=add-to-your-blog.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "N/A",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:07.385427",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=add-to-your-blog.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:07.487361",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=secret-administrative-pages.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "N/A",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:07.767831",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=secret-administrative-pages.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:07.911134",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/?page=credits.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "N/A",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:08.157787",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/?page=credits.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:08.626298",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/?page=source-viewer.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:08.676888",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/?page=source-viewer.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "N/A",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:08.932836",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/?page=source-viewer.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:09.037003",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=framing.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "N/A",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:09.282294",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=framing.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:09.425328",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=change-log.htm",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "N/A",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:09.682066",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=change-log.htm",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:09.898023",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=installation.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "N/A",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:10.154438",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=installation.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:10.932780",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=documentation/vulnerabilities.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "N/A",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:11.177774",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=documentation/vulnerabilities.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:11.319141",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=documentation/how-to-access-Mutillidae-over-Virtual-Box-network.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "N/A",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:11.577770",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=documentation/how-to-access-Mutillidae-over-Virtual-Box-network.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:11.689457",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=usage-instructions.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "N/A",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:11.934786",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=usage-instructions.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:12.033255",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=php-errors.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "N/A",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:12.275648",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=php-errors.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:12.380278",
+        "type": "XSS",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=notes.php",
+        "payload": "<img src=x onerror=alert('test')>",
+        "form": "N/A",
+        "remediation": "Sanitize and encode user input. Use Content Security Policy (CSP) headers."
+    },
+    {
+        "timestamp": "2024-11-16T00:32:12.619479",
+        "type": "Directory Traversal",
+        "url": "http://192.168.56.129/mutillidae/index.php?page=notes.php",
+        "payload": "../../../../../../etc/passwd",
+        "form": "N/A",
+        "remediation": "Validate file paths. Use secure APIs for file handling and restrict access."
+    }
+]
